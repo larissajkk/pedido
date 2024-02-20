@@ -6,12 +6,66 @@ body{
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     height: 100vh;
+    width: auto;
     overflow: hidden;
+    transition: all 500ms linear;
+    background-image: url("../imagens/pexels-photo-1790574.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .wrap-everything{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 4vh;
+    gap: 2vh;
+    height: 100%;
+    width:  100%;
+} 
+.logo{
+    margin-bottom: 4vh;
+    opacity: 0.8;
+    animation: fromTop 2s linear;
+}   
+@keyframes fromTop {
+    0%{
+        opacity: 0;
+        transform: translateY(-200px);
+    }
+    100%{
+        opacity: 0.8;
+        transform: translateY(0px);
+    }
+}
+.logo-style{
+    width: 300px;
+    height: auto;
+    border-radius: 100%;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;;
+}
+
+.wrap-p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2vh;
+}
+
+p {
+    font-size: 4rem;
+    font-weight: 700;
+    color: white;
+    text-shadow:rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    filter: blur(1px);
+    transition: all 200ms linear;
+    animation: show 2s linear;
+}
+@keyframes show {
+    0%{
+        opacity: 0.1;
+    }
+    100%{
+        opacity: 0.8;
+    }
 }
