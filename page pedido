@@ -26,7 +26,36 @@
       </div>
       <button onclick="comecar()" type="button" class="btn btn-outline-dark">Começar</button>
       <div id="selects-div">
-            <h2>Olá <span id="nomePrint"></span>, vamos começar seu pedido!</h2>
-      </div>
+        <h2>Olá <span id="nomePrint"></span>, vamos começar seu pedido!</h2>
+        <h3>Pratos</h3>
+        <select class="form-select" aria-label="Default select example">
+        <option selected>Selecione seu prato</option>
+        <option value="1">Coxinha (c. catupiry)</option>
+        <option value="2">Empadão de camarão</option>
+        <option value="3">Sanduíche natural</option>
+        </select> 
+        <h3>Bebidas</h3>
+        <select class="form-select" aria-label="Default select example">
+        <option selected>Selecione sua bebida</option>
+        <option value="1">Cafés</option>
+        <option value="2">Sucos naturais</option>
+        <option value="3">Chás</option>
+        </select>  
+        <h3>Sobrememsas</h3>
+        <select class="form-select" aria-label="Default select example">
+        <option selected>Selecione sua sobremesa</option>
+        <option value="1">Fatia de bolo</option>
+        <option value="2">Bombons</option>
+        <option value="3">Sonhos</option>
+        </select>
+        <div>
+            <button type="button" onclick="calcularTotal()" class="btn btn-success">Fazer pedido</button>
+            <button type="button" onclick="limpar()" class="btn btn-outline-secundary">limpar</button>
+        </div>  
+        <div>
+            <span class="badge rounded-pill bg-primary">Total</span>
+            <span class="badge rounded-pill bg-danger" id="resultado"></span>
+        </div>     
+    </div>
 </body>
 </html>
