@@ -53,9 +53,17 @@
             <button type="button" onclick="limpar()" class="btn btn-outline-secundary">limpar</button>
         </div>  
         <div>
-            <span class="badge rounded-pill bg-primary">Total</span>
+            <span class="badge rounded-pill bg-dark">Total</span>
             <span class="badge rounded-pill bg-danger" id="resultado"></span>
-        </div>     
+        </div> 
+        <div class="pedido-pronto" id="pedido-pronto">
+            <h4>Pratos</h4>
+            <p id="pratos-pronto"></p>
+            <h4>Bebidas</h4>
+            <p id="bebidas-pronto"></p>
+            <h4>Sobremesas</h4>
+            <p id="sobremesas-pronto"></p>
+        </div>    
     </div>
 </body>
 </html>
