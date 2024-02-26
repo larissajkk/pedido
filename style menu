@@ -9,7 +9,7 @@ body{
     width: auto;
     overflow: hidden;
     transition: all 500ms linear;
-    background-image: url("../imagens/pexels-photo-1790574.jpeg");
+    background-image: url("https://images.pexels.com/photos/6896280/pexels-photo-6896280.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
     background-repeat: no-repeat;
     background-size: cover;
 }
